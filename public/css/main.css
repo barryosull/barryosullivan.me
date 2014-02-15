@@ -1,0 +1,48 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================= */
+
+body {
+	padding-top: 20px;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.header {
+	text-align: center;
+	border-top: 5px solid #E74F4E;
+}
+
+.header .title {
+	font-size: 40px;
+	font-weight: bold;
+	color: #3C3C3C;
+}
+
+.header .title-sub {
+	background-color: #E74F4E;
+	color: #fff;
+	font-size: 15px;
+}
+
+footer {
+	background-color: #3C3C3C;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
