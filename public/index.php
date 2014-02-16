@@ -15,7 +15,7 @@ $app->get('/', function () use ($app, $twig) {
 
 $app->get('/blog', function () use ($app, $twig) {
 
-	$client = new Client('http://barryosullivan.me/api');
+	$client = new Client('http://blog.barryosullivan.me/api');
 
 	$request = $client->get('get_posts');
 	$response = $request->send();
