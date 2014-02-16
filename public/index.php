@@ -25,4 +25,8 @@ $app->get('/blog', function () use ($app, $twig) {
     echo $twig->render('blog.php', $data);
 });
 
+$app->get('/reading', function () use ($app, $twig) {
+	echo $twig->render('reading.php');
+});
+
 $app->run();
