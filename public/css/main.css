@@ -7,6 +7,7 @@
 body {
 	padding-top: 20px;
 	font-family: 'PT Sans', sans-serif;
+	font-size: 15px;
 }
 
 .header {
@@ -15,8 +16,12 @@ body {
 }
 
 .header .title {
+	padding: 5px 0px 10px 0px;
 	font-size: 40px;
 	font-weight: bold;
+}
+
+.header .title a {
 	color: #3C3C3C;
 }
 
@@ -24,14 +29,42 @@ body {
 	background-color: #E74F4E;
 	color: #fff;
 	font-size: 15px;
+	padding: 2px 0px;
+}
+
+.home {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+}
+
+.home a.btn-lg {
+	margin: 0px 10px;
+	padding: 10px 20px;
+	font-size: 20px;
+	background-image: none;
+}
+
+.wp-caption {
+	padding: 5px;
+	font-size: 12px;
+	border: 1px solid #eee;
+} 
+
+.alignright {
+	float: right;
+	margin-left: 10px;
+}
+
+.alignleft {
+	float: left;
 }
 
 footer {
-	background-color: #3C3C3C;
+	background-color: #505050;
 	color: #fff;
+	padding: 2px 10px 2px 10px;
 }
-
-
 
 
 
