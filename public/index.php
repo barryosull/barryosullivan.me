@@ -1,7 +1,7 @@
 <?php
 require '../vendor/autoload.php';
 
-define('APP_PATH', '../application');
+define('APP_PATH', '../app');
 
 use Guzzle\Http\Client;
 
@@ -26,7 +26,25 @@ $app->get('/blog', function () use ($app, $twig) {
 });
 
 $app->get('/reading', function () use ($app, $twig) {
-	echo $twig->render('reading.php');
+	$pocketConfig = json_decode(file_get_contents(APP_PATH.'/config/pocket.json'));
+
+	$client = new Client('https://getpocket.com/v3');
+
+    $query = array(
+		'consumer_key' => $pocketConfig->consumer_key,
+		'access_token' => $pocketConfig->access_token,
+		'state' => 'archive'
+    );
+
+	$request = $client->post('get', array(), 
+		$query
+	);
+
+	$response = $request->send();
+
+	$data = $response->json();
+
+	echo $twig->render('reading.php', $data);
 });
 
 $app->run();
