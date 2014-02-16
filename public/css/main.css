@@ -33,12 +33,20 @@ body {
 }
 
 .home {
-	text-align: center;
 	padding: 10px;
 	margin: 10px;
 }
 
-.home a.btn-lg {
+img.profile-pic {
+	margin: 10px;
+}
+
+.what-I-am {
+	text-align: center;
+	
+}
+
+.what-I-am a.btn-lg {
 	margin: 0px 10px;
 	padding: 10px 20px;
 	font-size: 20px;
